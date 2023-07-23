@@ -1,0 +1,116 @@
+
+html { 
+    background-color: rgb(21, 25, 82);
+}
+
+
+.container { 
+    display: flex;
+    flex-direction: column;
+  
+    background-color: rgb(2, 6, 63);
+    width: 300px;
+    margin-left: 20px;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+.flex { 
+    display: flex;
+    justify-content: center;
+ 
+}
+
+.equilibrium { 
+    width: 260px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+ 
+
+}
+
+img { 
+
+}
+
+.caixa { 
+    margin-left: 20px;
+    width: 250px;
+}
+
+.tag { 
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.sobre { 
+    color: gray;
+    
+}
+
+.info { 
+    display: flex;
+    align-items: center;
+    color: white;
+    
+}
+
+.relogio { 
+    display: flex;
+    justify-content: end;
+    flex: 1;
+
+}
+
+.iconeth { 
+   margin-right: 10px;
+}
+
+span { 
+    font-family: Arial, Helvetica, sans-serif;
+    color: aqua;
+    font-size: 14px;
+}
+
+.iconclock { 
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+    width: 20px;
+    height: 20px;
+    margin-top: 14px;
+    margin-right: 5px;
+}
+
+.avatar { 
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.footer { 
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-bottom: 20px;
+
+}
+
+.of { 
+    color: gray;
+
+}
+
+.days { 
+    margin-right: 10px;
+}
+
+.equilibrium { 
+    border-radius: 30px;
+}
