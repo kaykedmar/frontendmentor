@@ -1,0 +1,60 @@
+main { 
+    display: flex;
+    align-items: center;
+
+    display: inline-block;
+}
+
+.order { 
+    text-align: center;
+    margin: auto;
+    width: 300px;
+
+}
+
+.anual { 
+    display: flex;
+   text-align: c;
+    align-items: center;
+
+}
+
+.plano { 
+    display: flex;
+    flex-direction: column;
+    
+  
+}
+
+.mudar { 
+    display: flex;
+    flex: 1;
+
+    justify-content: end;
+    margin-right: 80px;
+}
+
+.music { 
+    margin-left: 80px;
+    margin-right: 10px;
+    width: 40px;
+}
+
+.footer { 
+    background-color: lightpink;
+    display: flex;
+    flex-direction: column;
+}
+
+.cancel { 
+    text-align: center;
+}
+
+.compra { 
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    background-color: rgb(20, 62, 202);
+}
