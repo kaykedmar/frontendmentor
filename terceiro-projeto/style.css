@@ -96,6 +96,8 @@ div > p {
 }
 
 
+
+
 @media screen and (max-width: 524px){
     main { 
         display: flex;
