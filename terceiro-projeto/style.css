@@ -52,7 +52,7 @@ button {
     width: 50%;
     margin-top: 20px;
     padding: 5%;
- 
+    font-weight: bold;
 }
 
 button:active { 
