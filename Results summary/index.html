@@ -32,7 +32,7 @@
     }
 
     .left { 
-      background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+      background-image: linear-gradient(to bottom, hsl(252, 85%, 62%), hsl(241, 86%, 47%));
       width: 250px;
       height: 360px;
       display: flex;
@@ -53,7 +53,7 @@
     .score { 
       display: flex;
       flex-direction: column;
-      background-image: radial-gradient(circle, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+      background-image: radial-gradient(circle, rgb(68, 28, 179), hsla(241, 82%, 46%, 0.479));
       width: 130px;
       height: 130px;
       border-radius: 50%;
@@ -66,7 +66,7 @@
     }
     
     .score-more { 
-      font-size: 30px;
+      font-size: 44px;
     }
 
     .score-menor { 
@@ -94,18 +94,18 @@
       font-weight: 500;
       padding-right: 30px;
       padding-left: 15px;
-    
+      font-size: 14px;
       width: 250px;
     }
 
     .container { 
- 
       width: 230px;
       margin-left: 15px;
     }
 
     .container > p { 
       font-weight: 700;
+      font-size: 17px;
     }
 
 
@@ -202,6 +202,27 @@
       color: white;
       cursor: pointer;
     }
+
+    
+
+    /* MediaScreen  */
+    @media screen and (max-width: 610px) {
+     main {
+      display: flex;
+      flex-direction: column; 
+      
+    } 
+      .left { 
+        width: 100%;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+      }
+
+      .right { 
+        padding-bottom: 20px;
+      }
+  }
+    
 
   </style>
 </head>
