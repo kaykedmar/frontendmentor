@@ -1,11 +1,263 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Results summary component</title>
+  <style>
+    * { 
+      font-family: Arial, Helvetica, sans-serif;
+     
+    }
+
+    body { 
+      width: 100vw;
+      height: 100vh;
+      background-color: rgb(214, 214, 214);
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    main { 
+      background-color: white;
+      display: flex;
+      align-items: center;
+      border-radius: 20px;
+      border: none;
+  
+      box-shadow: 1px 1px 10px rgb(190, 190, 190);
+   
+    }
+
+    .left { 
+      background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+      width: 250px;
+      height: 360px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      color: white;
+      padding-bottom: 20px;
+    }
+
+    .result { 
+      color: rgb(206, 204, 204);
+    }
+
+
+    .score { 
+      display: flex;
+      flex-direction: column;
+      background-image: radial-gradient(circle, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      text-align: center;
+      justify-content: center;
+      color: white;
+
+      cursor: pointer;
+    
+    }
+    
+    .score-more { 
+      font-size: 30px;
+    }
+
+    .score-menor { 
+      color: gray;
+      font-size: 13px;
+    }
+
+    .info { 
+      width: 200px;
+      font-size: 14px;
+      color: gray;
+    }
+    
+    .otimo { 
+      font-weight: 700;
+      margin-bottom: 0;
+      font-size: 20px;
+    }
+
+    /* Seçao da direita */
+
+
+
+    .right { 
+      font-weight: 500;
+      padding-right: 30px;
+      padding-left: 15px;
+    
+      width: 250px;
+    }
+
+    .container { 
+ 
+      width: 240px;
+      margin-left: 15px;
+    }
+
+    .container > p { 
+      font-weight: 700;
+    }
+
+    .caixa { 
+      background-color: rgba(255, 5, 5, 0.075);
+      padding: 0px 10px;
+      border-radius: 10px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .caixa-memory { 
+      background-color: rgba(255, 255, 0, 0.137);
+      margin-top: 10px;
+      padding: 0px 10px;
+      border-radius: 10px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .caixa-verbal { 
+      background-color: rgba(0, 128, 0, 0.048);
+      margin-top: 10px;
+      padding: 0px 10px;
+      border-radius: 10px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .caixa-visual { 
+      background-color: rgba(0, 0, 255, 0.103);
+      margin-top: 10px;
+      padding: 0px 10px;
+      border-radius: 10px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .numero-maior { 
+      font-weight: 700;
+    }
+
+    .numero-menor { 
+      color: gray;
+    }
+
+    .reaction { 
+      color: red;
+      
+    }
+
+    .memory { 
+      color: rgb(197, 197, 0);
+    }
+
+    .verbal { 
+      color: rgb(6, 240, 6);
+    }
+
+    .visual { 
+      color: rgb(1, 1, 253);
+    }
+    .name { 
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    
+    .name > p  { 
+      margin-left: 5px;
+    }
+
+    .score-pontual {
+      display: flex;
+      justify-content: end;
+      flex: 1;
+    }
+      
+    button { 
+      width: 100%;
+      margin-top: 20px;
+      padding: 13px;
+      border-radius: 40px;
+      border: none;
+      background-color: rgb(78, 78, 78);
+      color: white;
+      cursor: pointer;
+    }
+
+  </style>
 </head>
 <body>
-  
+  <main> 
+    <section class="left">
+      <p class="result">Your Result</p>
+      <div class="score">
+        <span class="score-more">76</span>
+        <span class="score-menor">of 100</span>
+      </div>
+      <p class="otimo">Great</p>
+      <p class="info">You scored higher than 65% of the people who have taken these tests</p>
+    </section>
+
+
+
+
+
+
+
+    <!-- Seçao da direita -->
+    <section class="right">
+      <div class="container">
+        <p>Summary</p>
+        <div class="caixa">
+          <div class="name">
+            <img src="images/icon-reaction.svg" alt="">
+            <p class="reaction">Reaction</p>
+            <span class="score-pontual"><span class="numero-maior" >80</span> / <span class="numero-menor">100</span> </span>
+          </div>
+        </div>
+
+        <div class="caixa-memory">
+          <div class="name">
+            <img src="images/icon-memory.svg" alt="">
+            <p class="memory">Memory</p>
+            <span class="score-pontual"><span class="numero-maior" >92</span> / <span class="numero-menor">100</span> </span>
+          </div>
+        </div>
+
+        <div class="caixa-verbal">
+          <div class="name">
+            <img src="images/icon-verbal.svg" alt="">
+            <p class="verbal">Verbal</p>
+            <span class="score-pontual"><span class="numero-maior" >61</span> / <span class="numero-menor">100</span> </span>
+          </div>
+        </div>
+
+        <div class="caixa-visual">
+          <div class="name">
+            <img src="images/icon-visual.svg" alt="">
+            <p class="visual">Visual</p>
+            <span class="score-pontual"><span class="numero-maior" >72</span> / <span class="numero-menor">100</span> </span>
+          </div>
+        </div>
+
+        <button>Continue</button>
+      </div>
+    </section>
+    
+
+
+  </main>
+
+
 </body>
 </html>
