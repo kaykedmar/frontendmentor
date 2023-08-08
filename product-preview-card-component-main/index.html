@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+  <style>
+
+    body { 
+      width: 100vw;
+      height: 100vh;
+      background-color: rgb(204, 198, 198);
+      font-family: Arial, Helvetica, sans-serif;
+
+      margin: 0;
+      padding: 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+
+    main { 
+      display: flex;
+      margin-bottom: 20px;
+      justify-content: center;
+      align-self: center;
+ 
+    
+      width: 500px;
+      display: flex;
+    
+    
+      background-color: white;
+       border-radius: 15px;
+    }
+
+   
+    img { 
+      cursor: pointer;
+      width: 100%;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+    }
+
+    .right { 
+      padding-left: 25px;
+      width: 100%;
+      padding-right: 30px;
+    }
+
+
+    .titulo { 
+      text-transform: uppercase;
+    }
+
+    .numero-maior { 
+      font-size: 30px;
+      color: rgb(11, 194, 11);
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .numero-menor { 
+      margin-left: 15px;
+      font-size: 15px;
+      color: rgb(11, 194, 11);
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .botao-compra { 
+      border: none;
+      width: 100%;
+      margin-top: 10px;
+      padding: 12px;
+      background-color: rgb(0, 122, 0);
+      color: white;
+      font-weight: 600;
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 10px;
+
+      cursor: pointer;
+    }
+
+    .cart { 
+      width: 15px;
+      margin-right: 10px;
+      
+    }
+
+    .subtitulo { 
+      font-size: 26px;
+      margin-bottom: 12px;
+      margin-top: 10px;
+    }
+  
+    .info { 
+      font-size: 16px;
+      margin-top: 0px;
+      line-height: 20px;
+   
+    }
+ 
+    @media (max-width: 375px) { 
+      main { 
+        display: flex;
+        flex-direction: column;
+      }
+
+      img { 
+        width: 300px;
+      }
+    }
+
+  </style>
+
+</head>
+<body>
+  <main>
+ 
+
+  <section class="left">
+    <img src="images/image-product-desktop.jpg" alt="">
+  </section>
+
+
+
+
+  <section class="right">
+  <p class="titulo">P e r f u m e</p>
+
+  <h2 class="subtitulo">Gabrielle Essence Eau De Parfum</h2>
+
+  <p class="info">
+    A floral, solar and voluptuous interpretation composed by Olivier Polge,
+    Perfumer-Creator for the House of CHANEL.
+  </p>
+
+  <span class="numero-maior">$149.99</span>
+  <span class="numero-menor">$169.99</span>
+
+  <button class="botao-compra"> <img class="cart" src="images/icon-cart.svg" alt="">Add to Cart</button>
+</section>
+
+</main>
+
+
+
+
+
+
+</body>
+
+
+</html>
