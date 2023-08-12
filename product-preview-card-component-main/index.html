@@ -10,7 +10,7 @@
   <style>
 
     body { 
-      width: 100vw;
+    
       height: 100vh;
       background-color: rgb(204, 198, 198);
       font-family: Arial, Helvetica, sans-serif;
@@ -34,7 +34,7 @@
     
       width: 500px;
       display: flex;
-    
+
     
       background-color: white;
        border-radius: 15px;
@@ -54,13 +54,14 @@
       padding-right: 30px;
     }
 
+    
 
     .titulo { 
       text-transform: uppercase;
     }
 
     .numero-maior { 
-      font-size: 30px;
+      font-size: 25px;
       color: rgb(11, 194, 11);
       font-weight: 700;
       cursor: pointer;
@@ -112,14 +113,25 @@
    
     }
  
-    @media (max-width: 375px) { 
+    @media (max-width: 500px) { 
       main { 
         display: flex;
         flex-direction: column;
+        width: 350px;
+        padding-bottom: 50px;
       }
 
-      img { 
+      
+
+      .perfume { 
+       height: 350px;
+       object-fit: cover;
+       border-top-right-radius: 10px;
+      }
+
+      .right { 
         width: 300px;
+        margin-left: 0px;
       }
     }
 
@@ -131,7 +143,7 @@
  
 
   <section class="left">
-    <img src="images/image-product-desktop.jpg" alt="">
+    <img class="perfume" src="images/image-product-desktop.jpg" alt="">
   </section>
 
 
