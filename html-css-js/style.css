@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body { 
+  width: 100vw;
+  height: 100vh;
+}
+
+.hidde { 
+  display: none;
+}
+
+main {
+  background-color: white;
+  display: flex;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Adicione essa linha para posicionar elementos relativamente */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+
+.product {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0px 0px;
+}
+
+.product p {
+  margin-left: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+form input {
+  padding: 0.7rem;
+  border-radius: 0.3rem;
+  border: solid 1px;
+}
+
+form label {
+  margin-bottom: 0.5rem;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.9rem;
+  background-color: rgb(156, 59, 74);
+  border: none;
+  border-radius: 0.3rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Right */
+
+.right-image {
+  margin-left: 30px;
+  width: 250px;
+}
+
+.right-image img {
+  width: 100%;
+}
+
+.modal {
+  background-color: rgb(243, 243, 243);
+  width: 50%; 
+  max-width: 400px;  
+  padding: 2rem;
+  border-radius: 1rem;
+  display: grid;
+  place-items: center;
+  position: absolute; /* Adicione essa linha para posicionar absolutamente */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centraliza o modal */
+ 
+}
+
+.modal
+
+.modal img { 
+  width: 40px;
+}
