@@ -2,105 +2,144 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  user-select: none;
 }
 
-body { 
+body {
+  background-color: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Adicionado para centralizar verticalmente */
+
   width: 100vw;
   height: 100vh;
 }
+
+
+main {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 1rem;
+  max-width: 1200px;
+  /* Defina a largura máxima desejada */
+
+
+}
+
+.left {
+  padding: 2rem;
+}
+
+.left h1 {
+  font-size: 3rem;
+}
+
+.left-top {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+
+
+.left-top p {
+  font-size: 1.2rem;
+  margin: 1rem 0rem 2rem 0rem;
+
+  width: 400px;
+}
+
+
+/* Informaçoes com icones  */
+.info-products {
+  margin-bottom: 3rem;
+}
+
+.info-products .products {
+  display: flex;
+  margin-bottom: 1rem
+}
+
+.info-products .products img {
+  margin-right: 1rem;
+}
+
+
+/* Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 0.6rem;
+}
+
+form input {
+  padding: 1rem;
+  border: 1px solid gray;
+  border-radius: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+form button {
+  cursor: pointer;
+
+  border-radius: 0.4rem;
+  padding: 1rem;
+  border: none;
+
+  background-color: rgb(231, 91, 112);
+  color: white;
+
+  font-weight: bold;
+}
+
+/* Esconder Hidde */
 
 .hidde { 
   display: none;
 }
 
-main {
-  background-color: white;
-  display: flex;
-  border-radius: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative; /* Adicione essa linha para posicionar elementos relativamente */
-}
 
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-
-h1 {
-  margin-bottom: 1rem;
-  font-size: 3rem;
-  margin-top: 2rem;
-}
-
-.product {
-  display: flex;
-  flex-direction: row;
-  margin: 10px 0px 0px;
-}
-
-.product p {
-  margin-left: 1rem;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  margin-top: 2rem;
-}
-
-form input {
-  padding: 0.7rem;
-  border-radius: 0.3rem;
-  border: solid 1px;
-}
-
-form label {
-  margin-bottom: 0.5rem;
-}
-
-button {
-  margin-top: 1rem;
-  padding: 0.9rem;
-  background-color: rgb(156, 59, 74);
-  border: none;
-  border-radius: 0.3rem;
-  color: white;
-  cursor: pointer;
-}
-
-/* Right */
-
-.right-image {
-  margin-left: 30px;
-  width: 250px;
-}
-
-.right-image img {
-  width: 100%;
-}
-
+/* Modal poop */
 .modal {
-  background-color: rgb(243, 243, 243);
-  width: 50%; 
-  max-width: 400px;  
-  padding: 2rem;
-  border-radius: 1rem;
-  display: grid;
-  place-items: center;
-  position: absolute; /* Adicione essa linha para posicionar absolutamente */
+  /* Existente */
+  position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Centraliza o modal */
- 
+  transform: translate(-50%, -50%);
 }
 
-.modal
+
+.modal h1 { 
+  width: 250px;
+  font-size: 3rem;
+
+  margin-bottom: 1rem;
+}
 
 .modal img { 
-  width: 40px;
+  margin-bottom: 1.3rem;
+  width: 50px;
+}
+
+.modal p { 
+  margin-bottom: 2rem;
+}
+
+.modal button { 
+  cursor: pointer;
+  width: 100%;
+
+  border-radius: 0.4rem;
+  padding: 1rem;
+  border: none;
+
+  background-color: rgb(231, 91, 112);
+  color: white;
+
+  font-weight: bold;
 }
