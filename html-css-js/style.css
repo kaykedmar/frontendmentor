@@ -16,6 +16,13 @@ body {
   height: 100vh;
 }
 
+/* Centralizar todos os conteudos */
+.container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+}
 
 main {
   display: flex;
@@ -108,11 +115,11 @@ form button {
 .modal {
   /* Existente */
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  max-width: 400px;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 2rem;
 }
-
 
 .modal h1 { 
   width: 250px;
@@ -142,4 +149,11 @@ form button {
   color: white;
 
   font-weight: bold;
+}
+
+.error-message {
+  display: none;
+  color: red; /* Estilo para a mensagem de erro */
+  font-size: 0.8rem; /* Tamanho do texto da mensagem de erro */
+  margin-top: 0.5rem; /* Espaçamento superior */
 }
