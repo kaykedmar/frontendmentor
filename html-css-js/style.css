@@ -4,6 +4,22 @@
   box-sizing: border-box;
 }
 
+:root {
+  --mobile-width: 375px;
+  --desktop-width: 1440px;
+
+  --tomato: hsl(4, 100%, 67%);
+  --bg-color: hsl(9, 100%, 90%);
+  --dark-Slate-Grey: hsl(234, 29%, 20%);
+  --charcoal-Grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+
+  /* paragraph font */
+  --font-size: 16px;
+
+}
+
 body {
   background-color: black;
 
@@ -157,3 +173,4 @@ form button {
   font-size: 0.8rem; /* Tamanho do texto da mensagem de erro */
   margin-top: 0.5rem; /* Espaçamento superior */
 }
+
