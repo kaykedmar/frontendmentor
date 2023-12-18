@@ -1,17 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project</title>
     <style>
+      :root {
+        --clr-100: hsl(300, 69%, 71%);
+        --clr-200: hsl(257, 40%, 49%);
+
+      }
+
       body {
+        color: white;
         margin: 0;
         display: flex;
         justify-content: center;
         align-items: center;
         min-height: 100vh;
         background: url("images/bg-desktop.svg");
+        background-color: var(--clr-200);
       }
 
       .container {
@@ -24,18 +32,25 @@
 
       .right {
         width: 500px;
+        margin-left: 20px;
       }
 
       .title {
         font-size: 45px;
         margin-bottom: 20px;
       }
+
+      .subtitle {
+        line-height: 25px;
+        font-size: 20px;
+      }
+
       button {
         background-color: whi;
         padding: 10px 35px;
         border-radius: 30px;
         border: none;
-
+        cursor: pointer;
         box-shadow: 1px 1px 5px rgb(173, 173, 173);
         background-color: white;
         font-weight: bold;
@@ -43,7 +58,6 @@
       }
 
       @media only screen and (max-width: 767px) {
-       
         .container {
           display: flex;
           flex-direction: column;
