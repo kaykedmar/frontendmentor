@@ -1,0 +1,177 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  background-color: hsl(235, 18%, 26%);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem;
+  align-items: center;
+ 
+}
+
+.success { 
+  display: none;
+}
+
+button { 
+  cursor: pointer;
+}
+
+.container {
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+  border-radius: 30px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 400px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  margin-right: 2rem;
+}
+
+.principal h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.principal p {
+  margin-bottom: 1.5rem;
+}
+
+.complemento {
+  display: flex;
+  align-items: center;
+}
+
+p img {
+  margin-right: 10px;
+}
+
+input {
+  padding: 1rem;
+  border-radius: 10px;
+  border: 2px solid #c7c7c7;
+}
+
+.entrada {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.entrada label {
+  margin-bottom: 0.7rem;
+  font-weight: bold;
+}
+
+.entrada button {
+  margin-top: 1.4rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.entrada button:hover {
+  background-color: hsl(4, 100%, 67%);
+  border: 1px solid hsl(4, 100%, 67%);
+  box-shadow: 1px 5px 15px 0px hsl(4, 100%, 67%);
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between; /* Isso espaça os elementos ao longo do contêiner */
+  align-items: center; /* Isso alinha os elementos verticalmente ao centro */
+  font-size: 15px;
+}
+
+
+
+main { 
+ 
+}
+
+/* Message success */ 
+.success { 
+  width: 450px;
+  background-color: white;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 1.5rem;
+}
+
+.success h1 { 
+  font-size: 40px;
+  margin-bottom: 1.3rem;
+  margin-top: 1.5rem;
+}
+
+.success p { 
+  line-height: 1.5rem;
+  margin-bottom: 1.4rem;
+}
+
+.success button { 
+  width: 100%;
+  padding: 0.8rem;
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  font-weight: bold;
+  margin-bottom: 2.3rem;
+  margin-top: 1.0rem;
+  transition: background-color 0.20s, box-shadow .20s;
+  border-radius: 10px;
+}
+
+.success button:hover {
+  background-color: hsl(4, 100%, 67%);
+  border: 1px solid hsl(4, 100%, 67%);
+  box-shadow: 1px 5px 15px 0px hsl(4, 100%, 67%);
+}
+
+.success img { 
+  width: 45px;
+}
+
+.success span { 
+  font-weight: bold;
+}
+
+
+/* Erros */
+.labels .error-email {
+  color: red;
+  display: none;
+}
+
+.entrada-usuario-error {
+  background-color: rgba(255, 0, 0, 0.103);
+  border: 1px solid rgba(255, 0, 0, 0.541);
+}
