@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário com Validação</title>
+  <style>
+    .error-message {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Formulário de Exemplo</h2>
+
+  <form id="myForm" onsubmit="return validateForm()">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome">
+    <div id="nomeError" class="error-message"></div>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email">
+    <div id="emailError" class="error-message"></div>
+
+    <input type="submit" value="Enviar">
+  </form>
+
+  <script>
+    function validateForm() {
+      // Resetando mensagens de erro
+      document.getElementById('nomeError').innerHTML = '';
+      document.getElementById('emailError').innerHTML = '';
+
+      // Obtendo valores dos campos
+      var nome = document.getElementById('nome').value;
+      var email = document.getElementById('email').value;
+
+      // Validando o campo Nome
+      if (nome.trim() === '') {
+        document.getElementById('nomeError').innerHTML = 'Por favor, preencha o campo Nome.';
+        return false; // Impede o envio do formulário
+      }
+
+      // Validando o campo Email
+      if (email.trim() === '' || !isValidEmail(email)) {
+        document.getElementById('emailError').innerHTML = 'Por favor, insira um email válido.';
+        return false; // Impede o envio do formulário
+      }
+
+      else { 
+        return true;
+      }
+      // Se a validação passar, o formulário é enviado
+   
+    }
+
+    function isValidEmail(email) {
+      // Lógica simples para validar o formato do email
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    }
+  </script>
+
+</body>
+</html>
