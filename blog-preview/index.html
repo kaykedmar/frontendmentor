@@ -12,14 +12,10 @@
     <title>Bootstrap</title>
     <style>
           :root {
-             --Yellow: hsl(47, 88%, 63%),
-             --Grey: hsl(0, 0%, 50%),
-             --Black: hsl(0, 0%, 7%),
-             --White: hsl(0, 0%, 100%)
-          }
-
-          .bg-yellow {
-            background-color: hsl(47, 88%, 63%);
+             --Yellow: hsl(47, 88%, 63%);
+             --Grey: hsl(0, 0%, 50%);
+             --Black: hsl(0, 0%, 7%);
+             --White: hsl(0, 0%, 100%);
           }
 
           .title { 
@@ -36,27 +32,26 @@
 
            .card-front { 
             border: 1px solid;
-        
            }
 
 
     </style>
   </head>
-  <body class="bg-yellow vh-100 d-flex justify-content-center align-items-center">
+  <body class="vh-100 d-flex justify-content-center align-items-center" style="background-color: var(--Yellow)">
     <main class="m-5">
-      <div class="card-front m-4 align-items-center p-4 shadow-lg rounded" style=" max-width: 385px; background-color: white; ">
-        <div  class="info-card d-flex-colum centralizar " >
+      <div class="card-front m-4 p-4 shadow-lg rounded" style=" max-width: 385px; background-color: var(--White); ">
+        <div>
         <img
           src="assets/images/illustration-article.svg"
           alt=""
         />
         
-        <button class="btn mt-3 mb-2" style="background-color: hsl(47, 88%, 63%); font-weight: bold;">Learning</button>
+        <button class="btn mt-3 mb-2" style="background-color: var(--Yellow); font-weight: bold;">Learning</button>
         <p style="font-weight: bold;">Published 21 Dec 2023</p>
-        <h1 class="title" style="color: hsl(47, 88%, 63%);">HTML & CSS foundation</h1>
-        <p class="subinfo">These languagues are the backbone of every website, defining structure, content, and presentation</p>
+        <h1 class="title" style="color: var(--Yellow);">HTML & CSS foundation</h1>
+        <p>These languagues are the backbone of every website, defining structure, content, and presentation</p>
         <div class="user" style="cursor: pointer;">
-          <img src="assets/images/image-avatar.webp" alt="" class="img-fluid">
+          <img src="assets/images/image-avatar.webp" alt="" >
           <p class="d-inline-flex ms-2 font-weight-bold">Greg Hooper</p>
         </div>
       </div>
