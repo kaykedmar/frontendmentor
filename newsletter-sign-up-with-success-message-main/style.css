@@ -21,14 +21,13 @@ main {
   flex-direction: row;
   margin: 2rem;
   align-items: center;
- 
 }
 
-.success { 
+.hide {
   display: none;
 }
 
-button { 
+button {
   cursor: pointer;
 }
 
@@ -112,14 +111,11 @@ input {
   font-size: 15px;
 }
 
-
-
-main { 
- 
+main {
 }
 
-/* Message success */ 
-.success { 
+/* Message success */
+.success {
   width: 450px;
   background-color: white;
   padding: 2rem;
@@ -127,26 +123,26 @@ main {
   border-radius: 1.5rem;
 }
 
-.success h1 { 
+.success h1 {
   font-size: 40px;
   margin-bottom: 1.3rem;
   margin-top: 1.5rem;
 }
 
-.success p { 
+.success p {
   line-height: 1.5rem;
   margin-bottom: 1.4rem;
 }
 
-.success button { 
+.success button {
   width: 100%;
   padding: 0.8rem;
   background-color: hsl(234, 29%, 20%);
   color: white;
   font-weight: bold;
   margin-bottom: 2.3rem;
-  margin-top: 1.0rem;
-  transition: background-color 0.20s, box-shadow .20s;
+  margin-top: 1rem;
+  transition: background-color 0.2s, box-shadow 0.2s;
   border-radius: 10px;
 }
 
@@ -156,22 +152,43 @@ main {
   box-shadow: 1px 5px 15px 0px hsl(4, 100%, 67%);
 }
 
-.success img { 
+.success img {
   width: 45px;
 }
 
-.success span { 
+.success span {
   font-weight: bold;
 }
-
 
 /* Erros */
 .labels .error-email {
   color: red;
-  display: none;
+}
+
+.illustration {
+  background-image: url(illustration-sign-up-desktop.svg);
 }
 
 .entrada-usuario-error {
   background-color: rgba(255, 0, 0, 0.103);
   border: 1px solid rgba(255, 0, 0, 0.541);
+}
+
+@media screen and (max-width: 768px) {
+  body { 
+    background-color: white;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100vw;
+    max-height: 70vh;
+  }
+
+  .illustration img {
+    width: 100%;
+  }
+
+
 }

@@ -11,7 +11,7 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-    
+    <script src="script.js" defer></script>
     
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
@@ -23,7 +23,8 @@
     <!-- Sign-up form start -->
     <div class="container">
       <main>
-        <section class="principal">
+    
+        <section class="principal hide">
           <h1>Stay updated!</h1>
           <p>Join 60,000+ product managers receiving monthly updates on:</p>
 
@@ -43,29 +44,29 @@
           <div class="entrada">
             <div class="labels">
               <label for="email">Email address</label>
-              <label class="error-email">Valid email required</label>
+              <label class="error-email hide">Valid email required</label>
             </div>
 
             <input
               type="email"
               placeholder="email@company.com"
-              class="entrada-usuario entrada-js"
+              class="entrada-user"
             />
 
             <button class="envioBtn">Subscribe to monthly newsletter</button>
           </div>
         </section>
-
         <div class="illustration">
-          <img src="assets/images/illustration-sign-up-desktop.svg" alt="" />
+        <img src="assets/images/illustration-sign-up-desktop.svg" alt="">
         </div>
+    
       </main>
     </div>
       <!-- Sign-up form end -->
 
       <!-- Success message start -->
 
-      <section class="success">
+      <section class="success hide">
       <div>
         <img src="assets/images/icon-success.svg" alt="">
         <h1>Thanks for subscribing!</h1>
