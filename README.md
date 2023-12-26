@@ -2,7 +2,7 @@
 
 [Results Summary](https://kaykedmar.github.io/frontendmentor/Results%20summary/)
 
-[Form with Html css and JavaScript]([https://kaykedmar.github.io/frontendmentor/html-css-js/](https://kaykedmar.github.io/frontendmentor/newsletter-sign-up-with-success-message-main/))
+[Form with Html css and JavaScript]([https://kaykedmar.github.io/frontendmentor/html-css-js/](https://kaykedmar.github.io/frontendmentor/newsletter-sign-up-with-success-message-main/)
 
 [Card NFT](https://kaykedmar.github.io/frontendmentor/primeiro-desafio/)
 
