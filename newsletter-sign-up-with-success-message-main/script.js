@@ -4,6 +4,9 @@ const btnBack = document.querySelector(".btnBack");
 const success = document.querySelector(".success");
 const main = document.querySelector("main");
 const errorMessage = document.querySelector(".labels .error-email");
+const emailUser = document.querySelector("#emailUser");
+
+
 
 btnEnvio.addEventListener("click", () => {
   inputUser = userInput.value;
@@ -13,6 +16,7 @@ btnEnvio.addEventListener("click", () => {
 
   if (inputUser === "" || !inputUser.includes("@")) {
     errorMessage.classList.remove("hide");
+    errorUser.classList.add(".");
     console.log("Digite um e-mail válido");
   } else {
     success.classList.remove("hide");
@@ -21,8 +25,12 @@ btnEnvio.addEventListener("click", () => {
 });
 
 btnBack.addEventListener("click", () => {
+  emailUser.textContent = userInput.value;
+  // Define o valor do emailUser antes de limpar o userInput
+
+  // Limpa o valor do userInput
+  userInput.value = "";
+
   success.classList.add("hide");
   main.classList.remove("hide");
-
-  userInput.value = "";
 });

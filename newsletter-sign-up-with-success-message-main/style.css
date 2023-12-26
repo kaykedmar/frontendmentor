@@ -111,9 +111,6 @@ input {
   font-size: 15px;
 }
 
-main {
-}
-
 /* Message success */
 .success {
   width: 450px;
@@ -169,10 +166,8 @@ main {
   background-image: url(illustration-sign-up-desktop.svg);
 }
 
-.entrada-usuario-error {
-  background-color: rgba(255, 0, 0, 0.103);
-  border: 1px solid rgba(255, 0, 0, 0.541);
-}
+
+
 
 @media screen and (max-width: 768px) {
   body { 
