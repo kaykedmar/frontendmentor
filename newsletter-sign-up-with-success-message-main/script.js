@@ -6,10 +6,10 @@ const main = document.querySelector("main");
 const errorMessage = document.querySelector(".labels .error-email");
 const emailUser = document.querySelector("#emailUser");
 
-
-
 btnEnvio.addEventListener("click", () => {
+  // Define o valor do emailUser antes de limpar o userInput
   inputUser = userInput.value;
+  emailUser.textContent = userInput.value;
 
   // Adiciona a classe 'hide' à mensagem de erro ao clicar no botão
   errorMessage.classList.add("hide");
@@ -25,9 +25,6 @@ btnEnvio.addEventListener("click", () => {
 });
 
 btnBack.addEventListener("click", () => {
-  emailUser.textContent = userInput.value;
-  // Define o valor do emailUser antes de limpar o userInput
-
   // Limpa o valor do userInput
   userInput.value = "";
 
